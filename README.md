@@ -1,10 +1,8 @@
 <h1 align="center">Word count based on approximate stems</h1>
-
-
-
+<h3>Summary</h3>
 An R script that finds the count of the important words in a text using their approximate stems.
 
-
+<h3>Bibliography</h3>
 Parts that were used that belong to other repositories:
 1. The Fi.csv file was taken from this repository: https://github.com/datquocnguyen/RDRPOSTagger/blob/master/Models/POS/English.DICT and as per the request of it's creator here are the citations that should be included:
 
