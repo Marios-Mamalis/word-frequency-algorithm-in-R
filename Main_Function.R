@@ -139,11 +139,3 @@ MainFunction = function(text, stoppoint) {
   allfrequency = sort(table(WordCount), decreasing = T)
   return(allfrequency[1:stoppoint])
 }
-
-# Scrapping Function
-sc = function(url, csssel) {
-  fullhtml = read_html(url)
-  selhtml = html_nodes(fullhtml, csssel)
-  seldata = html_text(selhtml)
-  return(seldata)
-}
