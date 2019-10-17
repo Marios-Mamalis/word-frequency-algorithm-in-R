@@ -1,4 +1,7 @@
 <h1 align="center">Word count based on approximate stems</h1>
+
+
+
 An R script that finds the count of the important words in a text using their approximate stems.
 
 
