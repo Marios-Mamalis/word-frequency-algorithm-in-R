@@ -1,4 +1,4 @@
-<h1 align="center">Word count based on approximate stems</h1>
+<h1 align="center">Most frequent meaningful word finder using approximate stems</h1>
 <h3>Summary</h3>
 An R script that finds the count of the important words in a text using their approximate stems.
 
