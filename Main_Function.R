@@ -1,5 +1,4 @@
 # Package
-install.packages(c("rvest", "tm", "stringr", "quanteda"))
 library(rvest)
 library(tm)
 library(stringr)
@@ -31,21 +30,13 @@ MainFunction = function(text, stoppoint) {
   
   # Filtering
   # Shrink dictionary to correct PoS
-  verbdict = subset(Fi, Pos == "VB" | 
-                      Pos == "VBD" | 
-                      Pos == "VBG" | 
-                      Pos == "VBN" | 
-                      Pos == "VBP" | 
-                      Pos == "VBZ" )
+  verbdict = subset(Fi, Pos %in% c("VB", "VBD", "VBG", "VBN", "VBP", "VBZ"))
   
   JJdict = subset(Fi, Pos == "JJ")
   JJRdict = subset(Fi, Pos == "JJR")
   JJSdict = subset(Fi, Pos == "JJS")
   
-  noundict = subset(Fi, Pos == "NN" |
-                      Pos == "NNS" |
-                      Pos == "NNP" |
-                      Pos == "NNPS")
+  noundict = subset(Fi, Pos %in% c("NN", "NNS", "NNP", "NNPS"))
   
   # Word exists in dictionary
   containedverbs = subset(dataframe_$Words[[1]][[1]], ((dataframe_$Words[[1]][[1]] %in% verbdict$Words) == T))
